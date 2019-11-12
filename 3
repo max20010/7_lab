@@ -1,0 +1,20 @@
+#include "stdio.h"
+int main()
+{
+	int i=0;
+	char x[11],x1[11];
+	gets(x);
+	gets(x1);
+	for(i=0;i<strlen(x);i++){
+		x[i]=tolower(x[i]);
+	}
+	for(i=0;i<strlen(x1);i++){
+		x1[i]=tolower(x1[i]);
+	}
+	if (strcmp(x,x1)==0){
+		printf("yes");
+	}else{
+		printf("no");
+	}
+	return 0;
+}
